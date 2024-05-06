@@ -8,7 +8,7 @@ import { CronJobs } from './constructs/cron-jobs';
 import { Database } from './constructs/database';
 import { Frontend } from './constructs/frontend';
 
-export class ServerlessFullstackWebappStarterKitStack extends Stack {
+export class ServerlessFsWebappStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, { description: 'Serverless fullstack webapp stack (uksb-1tupboc47)', ...props });
 

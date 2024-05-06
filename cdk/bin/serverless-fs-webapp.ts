@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { ServerlessFullstackWebappStarterKitStack } from '../lib/serverless-fullstack-webapp-starter-kit-stack';
+import { ServerlessFsWebappStack } from '../lib/serverless-fs-webapp-stack';
 
 const app = new cdk.App();
-new ServerlessFullstackWebappStarterKitStack(app, 'ServerlessFullstackWebappStarterKitStack', {});
+new ServerlessFsWebappStack(app, 'ServerlessFsWebappStack', {});
 
 // import { Aspects } from 'aws-cdk-lib';
 // import { AwsSolutionsChecks } from 'cdk-nag';

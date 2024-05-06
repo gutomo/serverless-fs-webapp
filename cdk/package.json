@@ -1,9 +1,9 @@
 {
-  "name": "@aws-samples/serverless-fullstack-webapp-starter-kit",
+  "name": "@aws-samples/serverless-fs-webapp",
   "version": "0.1.0",
   "private": true,
   "bin": {
-    "serverless-fullstack-webapp-starter-kit": "bin/serverless-fullstack-webapp-starter-kit.js"
+    "serverless-fs-webapp": "bin/serverless-fs-webapp.js"
   },
   "scripts": {
     "build": "tsc",

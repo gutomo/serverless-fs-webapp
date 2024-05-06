@@ -4,6 +4,8 @@ import App from './App';
 import { Authenticator } from '@aws-amplify/ui-react';
 import './index.css';
 
+import "@cloudscape-design/global-styles/index.css"
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Authenticator.Provider>
