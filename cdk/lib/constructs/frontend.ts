@@ -68,7 +68,7 @@ export class Frontend extends Construct {
           commands: ['npm ci'],
           // prevent too frequent frontend deployment, for temporary use
           // assetHash: 'frontend_asset',
-        },
+        }, 
       ],
       buildCommands: ['npm run bundle'],
       buildEnvironment: {

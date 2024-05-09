@@ -1,15 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import { Authenticator } from '@aws-amplify/ui-react';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import AppConfigured from "./components/app-configured";
+import { StorageHelper } from "./common/helpers/storage-helper";
+import "@cloudscape-design/global-styles/index.css";
 
-import "@cloudscape-design/global-styles/index.css"
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement,
+);
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const theme = StorageHelper.getTheme();
+StorageHelper.applyTheme(theme);
+
+root.render(
   <React.StrictMode>
-    <Authenticator.Provider>
-      <App />
-    </Authenticator.Provider>
+    <AppConfigured />
   </React.StrictMode>,
 );

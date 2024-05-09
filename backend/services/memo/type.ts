@@ -1,8 +1,10 @@
 export type CreateMemoRequest = {
-    title: string;
-    content: string;
+  name: string;
+  type: string;
+  status: string;
+  details: number;
 }
 
 export type DeleteMemoRequest = {
-    sk: string;
+  sk: string;
 }
